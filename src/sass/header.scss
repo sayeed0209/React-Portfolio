@@ -1,0 +1,17 @@
+/*=================================================================*/
+/*                      HEADER                              
+/*=================================================================*/
+header {
+  &.left{
+    color: #fff;
+    background-color: $colorblue;
+    min-height: 620px;
+    max-height: 600px;
+    width: 265px;
+    position:fixed;
+    top: 50px;
+    border-radius:1.25rem;
+
+  }
+
+}
