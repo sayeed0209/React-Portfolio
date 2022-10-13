@@ -9,11 +9,12 @@ import {
 	FaInstagram,
 	FaYoutube,
 	FaDribbble,
+	FaHome,
 } from 'react-icons/fa';
 
 const headerData = {
 	name: 'Abu Sayeed',
-	designation: 'Web Developer',
+	designation: 'Front End Developer',
 	imageThumb: mainImg,
 	social: {
 		facebook: 'https://facebook.com',
@@ -69,9 +70,11 @@ function Header({ toggleHeader, handleToggleHeader }) {
 					<span aria-hidden="true">&times;</span>
 				</button>
 				<div className="header-inner d-flex align-items-start flex-column">
-					<Link to="/">
-						<img src={headerData.imageThumb} alt={headerData.name} />
-					</Link>
+					<div className="aside-nav-img">
+						<Link to="/">
+							<img src={headerData.imageThumb} alt={headerData.name} />
+						</Link>
+					</div>
 					<Link to="/" className="site-title dot mt-3">
 						{headerData.name}
 					</Link>
@@ -90,11 +93,17 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										offset={-50}
 										duration={500}
 									>
-										<i className="icon-home"></i>Home
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Home
 									</ScrollLink>
 								) : (
 									<Link to="/">
-										<i className="icon-home"></i>Home
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Home
 									</Link>
 								)}
 							</li>
@@ -108,11 +117,17 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										offset={-50}
 										duration={500}
 									>
-										<i className="icon-user"></i>About
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										About
 									</ScrollLink>
 								) : (
 									<Link to="/">
-										<i className="icon-user"></i>About
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										About
 									</Link>
 								)}
 							</li>
@@ -126,11 +141,17 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										offset={-50}
 										duration={500}
 									>
-										<i className="icon-bulb"></i>Services
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Services
 									</ScrollLink>
 								) : (
 									<Link to="/">
-										<i className="icon-bulb"></i>Services
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Services
 									</Link>
 								)}
 							</li>
@@ -144,11 +165,17 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										offset={-50}
 										duration={500}
 									>
-										<i className="icon-graduation"></i>Resume
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Resume
 									</ScrollLink>
 								) : (
 									<Link to="/">
-										<i className="icon-graduation"></i>Resume
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Resume
 									</Link>
 								)}
 							</li>
@@ -162,11 +189,17 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										offset={-50}
 										duration={500}
 									>
-										<i className="icon-grid"></i>Works
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Works
 									</ScrollLink>
 								) : (
 									<Link to="/">
-										<i className="icon-grid"></i>Works
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Works
 									</Link>
 								)}
 							</li>
@@ -180,11 +213,17 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										offset={-50}
 										duration={500}
 									>
-										<i className="icon-pencil"></i>Blog
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Blog
 									</ScrollLink>
 								) : (
 									<Link to="/">
-										<i className="icon-pencil"></i>Blog
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Blog
 									</Link>
 								)}
 							</li>
@@ -198,11 +237,17 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										offset={-50}
 										duration={500}
 									>
-										<i className="icon-phone"></i>Contact
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Contact
 									</ScrollLink>
 								) : (
 									<Link to="/">
-										<i className="icon-phone"></i>Contact
+										<span className="icon nav-icon">
+											<FaHome />
+										</span>
+										Contact
 									</Link>
 								)}
 							</li>
