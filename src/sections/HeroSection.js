@@ -1,9 +1,10 @@
 import React from 'react';
 import { BsFillGrid1X2Fill, BsFillEnvelopeFill } from 'react-icons/bs';
+import Typewriter from 'typewriter-effect';
 import { Link as ScrollLink } from 'react-scroll';
 import hero_img from '../assets/img/hero-img.jpg';
 const heroSectionData = {
-	name: 'Abu Sayeed',
+	name: ' Abu Sayeed',
 	aboutMe: `I am a Front-end developer.
 	My primary focus on writing
 	clean, elegant and efficient
@@ -21,7 +22,16 @@ const HeroSection = () => {
 			}}
 		>
 			<div className="cta max-auto mt-2">
-				<h1 className="mt-0 mb-4">I'm {heroSectionData.name}</h1>
+				<h1 className="mt-0 mb-4">
+					<Typewriter
+						options={{
+							strings: "I'm " + heroSectionData.name.split(' ').join(''),
+							autoStart: true,
+							loop: true,
+							delay: 120,
+						}}
+					/>
+				</h1>
 				<span className="dot"></span>
 				<p className="mb-4">{heroSectionData.aboutMe}</p>
 				<ScrollLink
