@@ -4,6 +4,7 @@ import Layout from '../Layout/Layout';
 import HeroSection from '../sections/HeroSection';
 import SectionHeading from '../sections/SectionHeading';
 import Skills from '../sections/Skills';
+import Experiences from '../sections/Experiences';
 import About from './About';
 
 const Homepage = () => {
@@ -25,6 +26,12 @@ const Homepage = () => {
 				<section className="shadow-blue white-bg padding">
 					<SectionHeading title="My skills" />
 					<Skills />
+				</section>
+			</Element>
+			<Element name="section-experiences">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="Experience & Education" />
+					<Experiences />
 				</section>
 			</Element>
 		</Layout>

@@ -1,3 +1,6 @@
+/*=================================================================*/
+/*                      MAIN                             
+/*=================================================================*/
 .site-wrapper {
   width: 1170px;
   margin-left: auto;
@@ -118,6 +121,9 @@ section {
   }
 }
 
+/*=================================================================*/
+/*                      SKILLS                             
+/*=================================================================*/
 .progress {
   height: 3px;
   margin-bottom: 0;
@@ -148,5 +154,85 @@ section {
   h4 {
     font-size: 14px;
     text-transform: uppercase;
+  }
+}
+
+/*=================================================================*/
+/*                      EXPERIENCE                            
+/*=================================================================*/
+.timeline {
+  position: relative;
+  padding: 70px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0px;
+  left: calc(20% + 2px);
+  bottom: 0px;
+  width: 1px;
+  background: $colororange;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    border-radius: 100%;
+    background: $colororange;
+    position: absolute;
+    left: -3px;
+    height: 7px;
+    width: 7px;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+}
+
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry {
+  clear: both;
+  position: relative;
+  &:last-of-type {
+    .body {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.entry .title {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+
+.entry .title:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid $colororange;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 4.5px;
+  top: 15%;
+  right: -8px;
+  z-index: 1;
+}
+
+.entry .body {
+  margin: 0 0 6em;
+  float: right;
+  width: 80%;
+  padding-left: 60px;
+  p {
+    margin-bottom: 0;
   }
 }

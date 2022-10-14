@@ -10,7 +10,16 @@ import {
 	FaYoutube,
 	FaDribbble,
 	FaHome,
+	FaGraduationCap,
 } from 'react-icons/fa';
+import {
+	BsGithub,
+	BsFillPersonFill,
+	BsLightbulbFill,
+	BsFillTelephoneFill,
+	BsFillGridFill,
+	BsLinkedin,
+} from 'react-icons/bs';
 
 const headerData = {
 	name: 'Abu Sayeed',
@@ -63,7 +72,7 @@ function Header({ toggleHeader, handleToggleHeader }) {
 			>
 				<button
 					type="button"
-					className="close"
+					className="close btn"
 					aria-label="Close"
 					onClick={handleToggleHeader}
 				>
@@ -118,43 +127,20 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										duration={500}
 									>
 										<span className="icon nav-icon">
-											<FaHome />
+											<BsFillPersonFill />
 										</span>
 										About
 									</ScrollLink>
 								) : (
 									<Link to="/">
 										<span className="icon nav-icon">
-											<FaHome />
+											<BsFillPersonFill />
 										</span>
 										About
 									</Link>
 								)}
 							</li>
-							<li>
-								{currentPath === '/' ? (
-									<ScrollLink
-										activeClass="active"
-										to="section-services"
-										spy={true}
-										smooth={true}
-										offset={-50}
-										duration={500}
-									>
-										<span className="icon nav-icon">
-											<FaHome />
-										</span>
-										Services
-									</ScrollLink>
-								) : (
-									<Link to="/">
-										<span className="icon nav-icon">
-											<FaHome />
-										</span>
-										Services
-									</Link>
-								)}
-							</li>
+
 							<li>
 								{currentPath === '/' ? (
 									<ScrollLink
@@ -166,14 +152,14 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										duration={500}
 									>
 										<span className="icon nav-icon">
-											<FaHome />
+											<FaGraduationCap />
 										</span>
 										Resume
 									</ScrollLink>
 								) : (
 									<Link to="/">
 										<span className="icon nav-icon">
-											<FaHome />
+											<FaGraduationCap />
 										</span>
 										Resume
 									</Link>
@@ -190,43 +176,20 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										duration={500}
 									>
 										<span className="icon nav-icon">
-											<FaHome />
+											<BsFillGridFill />
 										</span>
 										Works
 									</ScrollLink>
 								) : (
 									<Link to="/">
 										<span className="icon nav-icon">
-											<FaHome />
+											<BsFillGridFill />
 										</span>
 										Works
 									</Link>
 								)}
 							</li>
-							<li>
-								{currentPath === '/' ? (
-									<ScrollLink
-										activeClass="active"
-										to="section-blogs"
-										spy={true}
-										smooth={true}
-										offset={-50}
-										duration={500}
-									>
-										<span className="icon nav-icon">
-											<FaHome />
-										</span>
-										Blog
-									</ScrollLink>
-								) : (
-									<Link to="/">
-										<span className="icon nav-icon">
-											<FaHome />
-										</span>
-										Blog
-									</Link>
-								)}
-							</li>
+
 							<li>
 								{currentPath === '/' ? (
 									<ScrollLink
@@ -238,14 +201,14 @@ function Header({ toggleHeader, handleToggleHeader }) {
 										duration={500}
 									>
 										<span className="icon nav-icon">
-											<FaHome />
+											<BsFillTelephoneFill />
 										</span>
 										Contact
 									</ScrollLink>
 								) : (
 									<Link to="/">
 										<span className="icon nav-icon">
-											<FaHome />
+											<BsFillTelephoneFill />
 										</span>
 										Contact
 									</Link>
