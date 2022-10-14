@@ -41,7 +41,7 @@ const HeroSection = () => {
 					smooth={true}
 					duration={500}
 					offset={50}
-					className="btn btn-default btn-lg mr-3 hero-btn"
+					className="btn btn-default btn-lg mr-3 btn-spacer"
 				>
 					View Portfolio
 					<BsFillGrid1X2Fill />

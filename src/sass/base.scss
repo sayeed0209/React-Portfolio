@@ -2,59 +2,64 @@
 /*                      BASE                              
 /*=================================================================*/
 
-*,::after,::before{
-    margin: 0;
-    padding: 0;box-sizing: border-box;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    color: #888;
-    background-color: #f6f7ff;
-    font-family: $fontbody;
-    font-size: 14px;
-    line-height: 1.7;
-    overflow-x: hidden;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-left {
-    text-align: left;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
-  
-  .text-dark {
-    color: #000 !important;
-  }
-  
-  .relative {
-    position: relative;
-  }
-  
-  .color-white {
+  color: #888;
+  background-color: #f6f7ff;
+  font-family: $fontbody;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-dark {
+  color: #000 !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.color-white {
+  color: #fff;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #fff;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: #fff;
-    }
   }
-  
-  .background-blue {
-    background: $colorblue;
-  }
+}
+
+.background-blue {
+  background: $colorblue;
+}
 
 
 /*=================================================================*/
@@ -72,36 +77,48 @@ h6 {
   font-weight: 700;
   margin: 20px 0;
 }
+
 h1 {
-    font-size: 36px;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+a {
+  color: $colordefault;
+  outline: 0;
+  @include transition(0.3s);
+
+  &:hover {
+    color: $colororange;
+    text-decoration: none;
   }
-  
-  h2 {
-    font-size: 30px;
-  }
-  
-  h3 {
-    font-size: 24px;
-  }
-  
-  h4 {
-    font-size: 18px;
-  }
-  a {
-    color: $colordefault;
+
+  &:focus {
     outline: 0;
-    @include transition(0.3s);
-    &:hover {
-      color: $colororange;
-      text-decoration: none;
-    }
-    &:focus {
-      outline: 0;
-    }
   }
-  
+}
 
 
-  [data-height="10"] {
-    height: 10px;
-  }
+
+[data-height="10"] {
+  height: 10px;
+}
+
+.-mt-50 {
+  margin-top: -50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
