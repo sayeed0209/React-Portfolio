@@ -4,18 +4,16 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import mainImg from '../assets/img/main-img.jpg';
 import {
-	FaFacebookF,
+	
 	FaTwitter,
-	FaInstagram,
-	FaYoutube,
-	FaDribbble,
+	
 	FaHome,
 	FaGraduationCap,
 } from 'react-icons/fa';
 import {
 	BsGithub,
 	BsFillPersonFill,
-	BsLightbulbFill,
+
 	BsFillTelephoneFill,
 	BsFillGridFill,
 	BsLinkedin,
@@ -26,11 +24,9 @@ const headerData = {
 	designation: 'Front End Developer',
 	imageThumb: mainImg,
 	social: {
-		facebook: 'https://facebook.com',
-		twitter: 'https://twitter.com',
-		instagram: 'https://www.instagram.com/',
-		youtue: 'https://www.youtube.com/',
-		dribbble: 'https://dribbble.com/',
+		twitter: 'https://twitter.com/abusaye63293191',
+		github: 'https://github.com/sayeed0209',
+		linkedin: 'https://www.linkedin.com/in/sayeed0209/',
 	},
 };
 
@@ -219,13 +215,6 @@ function Header({ toggleHeader, handleToggleHeader }) {
 
 					<div className="footer mt-auto">
 						<ul className="social-icons list-inline">
-							{!headerData.social.facebook ? null : (
-								<li className="list-inline-item">
-									<a href={headerData.social.facebook}>
-										<FaFacebookF />
-									</a>
-								</li>
-							)}
 							{!headerData.social.twitter ? null : (
 								<li className="list-inline-item">
 									<a href={headerData.social.twitter}>
@@ -233,24 +222,18 @@ function Header({ toggleHeader, handleToggleHeader }) {
 									</a>
 								</li>
 							)}
-							{!headerData.social.instagram ? null : (
+
+							{!headerData.social.linkedin ? null : (
 								<li className="list-inline-item">
-									<a href={headerData.social.instagram}>
-										<FaInstagram />
+									<a href={headerData.social.linkedin}>
+										<BsLinkedin />
 									</a>
 								</li>
 							)}
-							{!headerData.social.youtue ? null : (
+							{!headerData.social.github ? null : (
 								<li className="list-inline-item">
-									<a href={headerData.social.youtue}>
-										<FaYoutube />
-									</a>
-								</li>
-							)}
-							{!headerData.social.dribbble ? null : (
-								<li className="list-inline-item">
-									<a href={headerData.social.dribbble}>
-										<FaDribbble />
+									<a href={headerData.social.github}>
+										<BsGithub />
 									</a>
 								</li>
 							)}

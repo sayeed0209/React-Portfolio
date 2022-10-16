@@ -2,22 +2,24 @@
 /*                      HEADER                              
 /*=================================================================*/
 header {
-  &.left{
+  &.left {
     color: #fff;
     background-color: $colorblue;
     min-height: 650px;
     max-height: 650px;
     width: 265px;
-    position:fixed;
+    position: fixed;
     top: 50px;
-    border-radius:1.25rem;
+    border-radius: 1.25rem;
     overflow: hidden;
-   
+
     @include transition(0.3s);
-    nav{
+
+    nav {
       margin-top: 1.5rem;
     }
-    .header-inner{
+
+    .header-inner {
       width: 100%;
       top: 0;
       bottom: 0;
@@ -26,17 +28,18 @@ header {
       padding: 1.8rem;
       position: absolute;
     }
-    button.close{
+
+    button.close {
       background-color: #fff;
       outline: none;
       border: 0;
       padding: 0;
-      opacity:1;
+      opacity: 1;
       color: $colororange;
       font-weight: 400;
       font-size: 16px;
-      width: 20px;  
-      height: 20px;  
+      width: 20px;
+      height: 20px;
       line-height: 22px;
       margin-top: 16px;
       margin-right: 18px;
@@ -44,54 +47,64 @@ header {
       z-index: 1;
       display: none;
     }
-    a{
+
+    a {
       color: #fff;
       text-decoration: none;
-      &:hover{
+
+      &:hover {
         color: #fff;
         text-decoration: none;
       }
     }
-    .site-title{
+
+    .site-title {
       display: block;
       font-size: 28px;
       font-weight: 700;
-      &.dot{
-        &::after{
+
+      &.dot {
+        &::after {
           content: "";
           background-color: $colororange;
           border-radius: 50%;
           display: inline-block;
           margin-left: 5px;
-          width:8px;
-          height:8px;
+          width: 8px;
+          height: 8px;
         }
       }
     }
 
 
   }
-  .site-slogan{
+
+  .site-slogan {
     font-size: 12px;
     text-transform: uppercase;
   }
-  .vertical-menu{
+
+  .vertical-menu {
     font-size: 14px;
-    font-family:$fontstack;
+    font-family: $fontstack;
     list-style: none;
-    padding:0;
+    padding: 0;
     margin: 0;
+
     li {
       line-height: 2.5;
       position: relative;
+
       a {
         margin-left: 0;
         padding: 0;
         @include transition(0.3s);
+
         &:hover {
           margin-left: 5px;
           cursor: pointer;
         }
+
         &.active {
           &:before {
             content: "";
@@ -107,32 +120,40 @@ header {
       }
     }
   }
+
   .copyright {
     font-size: 12px;
     opacity: 0.7;
   }
 }
 
-.mobile-header{
+.mobile-header {
   background: $colorblue;
   border-radius: 20px;
   display: none;
   @include transition(0.3s);
-  &.push{
+
+  &.push {
     transform: translateX(295px)
   }
-  a{text-decoration: none;}
-  .logo{
-    img{
+
+  a {
+    text-decoration: none;
+  }
+
+  .logo {
+    img {
       max-height: 40px;
       max-width: 40px;
       margin-left: 5px;
     }
   }
-  .site-title{
-    vertical-align:middle;
+
+  .site-title {
+    vertical-align: middle;
     font-size: 24px;
     font-weight: 700;
+
     &.dot {
       &:after {
         content: "";
@@ -145,6 +166,7 @@ header {
       }
     }
   }
+
   button.menu-icon {
     cursor: pointer;
     background: transparent;
@@ -152,32 +174,62 @@ header {
     outline: none;
     vertical-align: middle;
     padding: 0;
+
     span {
       background: #fff;
       border-radius: 10px;
       display: block;
       height: 4px;
       width: 25px;
+
       &:nth-child(2) {
         margin-top: 4px;
         margin-bottom: 4px;
       }
     }
   }
+
   a {
     color: #fff;
+
     &:hover {
       text-decoration: none;
     }
   }
 }
-.aside-nav-img{
+
+.aside-nav-img {
   width: 100px;
   height: 100px;
   border: 5px solid #fff;
-    border-radius: 50%;
+  border-radius: 50%;
+}
+
+.aside-nav-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.social-icons li a {
+  color: #fff;
+  background: #FF5959;
+  border-radius: 50%;
+  display: block;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  width: 30px;
+  @include transition(0.3s);
+
+  &:hover {
+    color: #FF5959;
+    background: #fff;
   }
-  .aside-nav-img img{
-    width: 100%;height: 100%;
-    border-radius:50%;
+
 }
