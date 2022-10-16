@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import mainImg from '../assets/img/main-img.jpg';
-import CVSayeed from '../assets/CV-SAYEED.pdf';
+import CVSayeed from '../assets/CV_SAYEED.pdf';
 import { BsCloudDownloadFill, BsFillEnvelopeFill } from 'react-icons/bs';
 
 const aboutData = {
