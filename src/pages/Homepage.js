@@ -5,6 +5,8 @@ import HeroSection from '../sections/HeroSection';
 import SectionHeading from '../sections/SectionHeading';
 import Skills from '../sections/Skills';
 import Experiences from '../sections/Experiences';
+import Portfolios from '../sections/Portfolios';
+import Contact from '../sections/Contact';
 import About from './About';
 
 const Homepage = () => {
@@ -32,6 +34,18 @@ const Homepage = () => {
 				<section className="shadow-blue white-bg padding">
 					<SectionHeading title="Experience & Education" />
 					<Experiences />
+				</section>
+			</Element>
+			<Element name="section-portfolios">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="Portfolio" />
+					<Portfolios />
+				</section>
+			</Element>
+			<Element name="section-contact">
+				<section className="shadow-blue white-bg padding">
+					<SectionHeading title="Get in touch" />
+					<Contact />
 				</section>
 			</Element>
 		</Layout>

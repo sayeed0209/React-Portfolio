@@ -25,7 +25,7 @@ const educationData = [
 	{
 		id: 4,
 		year: '2007 - 2013',
-		degree: 'Economics',
+		degree: 'Bachelor’s Degree In Economics',
 		content: 'National University of Bangladesh.',
 	},
 ];
