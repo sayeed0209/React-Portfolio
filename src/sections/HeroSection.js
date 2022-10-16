@@ -5,13 +5,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import hero_img from '../assets/img/hero-img.jpg';
 const heroSectionData = {
 	name: ' Abu Sayeed',
-	aboutMe: `I am a Front-end developer.
-	My primary focus on writing
-	clean, elegant and efficient
-	code. Seeking position in a
-	company that appreciates
-	hard work, dedication and
-	evolving technical skills.`,
+	aboutMe: `I am a self-driven front-end developer and have been in the industry for more than 2 years. I have a keen eye for detail and most of my working life has been dedicated to creating stunning websites for clients.`,
 };
 const HeroSection = () => {
 	return (

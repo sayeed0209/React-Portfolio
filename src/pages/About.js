@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import mainImg from '../assets/img/main-img.jpg';
+import CVSayeed from '../assets/CV-SAYEED.pdf';
 import { BsCloudDownloadFill, BsFillEnvelopeFill } from 'react-icons/bs';
+
 const aboutData = {
-	cvpath: 'media/empty.pdf',
+	cvpath: CVSayeed,
 	image: mainImg,
 	name: 'Abu Sayeed',
 	location: 'Barcelona, Spain',
 	email: 'sayeed0209@gmail.com',
-	phone:'+34 612 207  931',
+	phone: '+34 612 207  931',
 	aboutMe:
 		'I am a Front-end developer. My primary focus on writing clean, elegant and efficient code. Seeking position in a company that appreciates hard work, dedication and evolving technical skills.',
 };
