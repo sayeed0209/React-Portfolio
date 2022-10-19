@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 const contactData = {
 	phone: ['+34 612 207 931'],
-	email: ['sayeed0209gmail.com'],
+	email: ['sayeed0209@gmail.com'],
 	location: 'Calle Sepulveda, Barcelona',
 };
 
