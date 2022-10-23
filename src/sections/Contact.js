@@ -84,6 +84,7 @@ const Contact = () => {
 									placeholder="Your name"
 									onChange={handleChange}
 									value={fromData.name}
+									required
 								/>
 							</div>
 						</div>
@@ -97,6 +98,7 @@ const Contact = () => {
 									placeholder="Email address"
 									onChange={handleChange}
 									value={fromData.email}
+									required
 								/>
 							</div>
 						</div>
@@ -110,6 +112,7 @@ const Contact = () => {
 									placeholder="Subject"
 									onChange={handleChange}
 									value={fromData.subject}
+									required
 								/>
 							</div>
 						</div>
@@ -123,6 +126,7 @@ const Contact = () => {
 									placeholder="Message"
 									onChange={handleChange}
 									value={fromData.message}
+									required
 								></textarea>
 							</div>
 						</div>
